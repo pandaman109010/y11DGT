@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUCH A GOOD WEBPAGE</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head> 
+
+
+<button onclick="playVid()" type="button" >>>> click me <<<</button> <!-- button to play video, i took all this code from google and gpt (THIS PART OF THE WEBSITE IS JUST FOR MEMES)-->
+
+<video id="myVideo" width="320" height="176">
+  <source src="/rickroll.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<script> 
+let vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+</script> 
+</body>
+</html>

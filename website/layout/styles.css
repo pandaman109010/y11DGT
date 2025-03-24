@@ -1,0 +1,94 @@
+body {
+    background-color: #333333;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+h1 {
+    color: #f0f0f0;
+}
+.mangaro {
+    font-family: "Bakbak One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* box stileing */
+
+p {
+    color: #f0f0f0;
+}
+
+img {
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo banner banner"
+        "nav nav nav"
+        "main main side"
+        "footer footer footer";
+}
+
+.box {
+    border: solid 1px black; /*note the order: solid (style) - width of the line (in px) - color of the line */
+    margin: 2px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.logo {
+    grid-area: logo;
+    background-image: url('/images/banner.png');
+    height: auto;
+    width: auto;
+    background-color: rgb(17, 24, 39);
+    border-radius: 0px;
+    margin: 0px;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    grid-area: banner;
+    background-color: rgb(17, 24, 39);
+    border-radius: 0px;
+    margin: 0px;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(17, 24, 39);
+}
+
+.main {
+    grid-area: main;
+}
+
+.side {
+    grid-area: side;
+    background-image: url('/images/memevirt.png');
+    background-color: rgb(17, 24, 39);
+    border-radius: 0px;
+    margin: 0px;
+
+    background-size: cover; /* This will make the image cover the entire area */
+    height: 1505px;
+}
+
+.footer {
+    grid-area: footer;
+}
+/* end of box styling */
+
+/*nav bar styling */
+.nav a {text-decoration: none; font-weight: bold;} /*remove underline from links and make them bold */
+.nav a:link {color: #7f7f7f;} /*link color */
+.nav a:hover {color: #6a6a6a;}
+.nav a:visited {color: #a19da3;}
+/*end of nav bar styling */

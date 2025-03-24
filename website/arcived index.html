@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/arcived styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu - Linux.io</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <LInk rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="font.css">
+</head>
+<body>
+    <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <img src="images/banner.png" alt="" height="" width="400" class="rounded-lg">
+            <button id="toggle-dark-mode" onclick="dark()" style="float: right;">Toggle Dark Mode</button>
+        </div>
+    </div>
+
+    <p>‎</p>
+
+    <a href="/pages/2.html">
+        <button >></button>
+    </a>
+    
+    <a href="/pages/about.html">
+        <button>about me</button>
+    </a>
+
+    <script>
+        function dark() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            if (element.classList.contains("dark-mode")) {
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                localStorage.setItem("darkMode", "disabled");
+            }
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem("darkMode") === "enabled") {
+                document.body.classList.add("dark-mode");
+            }
+        }
+    </script>
+</body>
+</html>
