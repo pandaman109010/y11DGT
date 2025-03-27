@@ -1,14 +1,14 @@
-body {
+body {  /* this styles the text and backgrond */
     background-color: #000000;
     color: #f0f0f0;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: auto;
 }
-h1 {
+h1 { /* this styles the heddings */
     color: #f7f7f7;
 }
-.mangaro {
+.mangaro { /* this styles the fonts i have */
     font-family: "Bakbak One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -17,7 +17,7 @@ h1 {
 
 /* box stileing */
 
-p {
+p { /* this styles the paragraphs */
     color: #e8e8e8;
 }
 
@@ -25,7 +25,7 @@ img {
     margin-top: 20px;
 }
 
-.grid {
+.grid { /* this styles the grid */
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto;
@@ -44,7 +44,7 @@ img {
     border-radius: 15px;
 }
 
-.logo {
+.logo { /* this styles the logo and fixes gui isuses with it*/
     grid-area: logo;
     background-image: url('/images/banner.png');
     height: auto;
@@ -57,19 +57,19 @@ img {
     background-position: center;
 }
 
-.banner {
+.banner { /* this styles the banner */
     grid-area: banner;
     background-color: rgb(17, 24, 39);
     border-radius: 0px;
     margin: 0px;
 }
 
-.nav {
+.nav {  /* this styles the nav bar */
     grid-area: nav;
     background-color: rgb(17, 24, 39);
 }
 
-.main {
+.main { /* this styles the main content */
     grid-area: main;
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
@@ -81,7 +81,7 @@ img {
 }
 
 
-.side {
+.side {     /* this styles the side bar */
     grid-area: side;
     background-color: rgb(17, 24, 39);
     margin: 0px;
@@ -89,7 +89,7 @@ img {
     height: auto;
 }
 
-.footer {
+.footer { /* this styles the footer */
     grid-area: footer;
     background-color: rgb(17, 24, 39);
 }
